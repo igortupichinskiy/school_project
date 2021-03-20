@@ -11,10 +11,6 @@ class MyWidget(QMainWindow, Ui_MainWindow):
         # Вызываем метод для загрузки интерфейса из класса Ui_MainWindow,
         # остальное без изменений
         self.setupUi(self)
-        self.pushButton.clicked.connect(self.run)
-
-    def run(self):
-        self.label.setText("OK")
 
 
 if __name__ == '__main__':
